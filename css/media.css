@@ -1,0 +1,624 @@
+@media (max-width: 1200px) {
+  .header {
+    height: 462px;
+    background-size: contain;
+  }
+  .header_top {
+    height: 71px;
+  }
+  .header_top_logo_img {
+    width: 80%;
+  }
+  .header_top_menu_link {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .header_top_social_link_img {
+    width: 20px;
+  }
+  .header_name {
+    height: 206px;
+    margin-top: 61px;
+  }
+  .header_name_title {
+    font-size: 35px;
+  }
+  .header_name_text {
+    font-size: 28px;
+  }
+  .header_name_contacts_item_text {
+    font-size: 14px;
+  }
+  .header_name_contacts_item_name {
+    font-size: 15px;
+  }
+  .advantages_title {
+    font-size: 26px;
+  }
+  .advantages_block_item {
+    width: 468px;
+  }
+  .advantages_block_item_texts_title {
+    font-size: 20px;
+  }
+  .advantages_block_item_texts_text {
+    font-size: 15px;
+  }
+  .turnkey {
+    margin-top: 40px;
+  }
+  .turnkey_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .turnkey_block_item_text {
+    font-size: 15px;
+  }
+  .price_block {
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    max-height: 306px;
+  }
+  .price_block_it {
+    width: auto;
+  }
+  .price_block_it:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .price_block_item_texts {
+    width: 345px;
+  }
+  .price_block_item_texts_name {
+    max-width: 250px;
+  }
+  .tabs_title {
+    font-size: 26px;
+    margin-bottom: 21px;
+  }
+  .tabs_item {
+    width: 259px;
+  }
+  .tabs_item_img_1, .tabs_item_img_2, .tabs_item_img_3 {
+    width: 259px;
+    height: 259px;
+    background-size: cover;
+  }
+  .tabs_item_title {
+    bottom: 38px;
+  }
+  .tabs_item_title_text {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .tabak_item {
+    width: 300px;
+    height: 300px;
+  }
+  .tabak_item_img {
+    width: 300px;
+    height: 300px;
+  }
+  .footer {
+    margin-top: 70px;
+  }
+  .footer_left_phone {
+    font-size: 20px;
+  }
+  .footer_left_text_1 {
+    font-size: 16px;
+  }
+  .footer_left_text_2 {
+    font-size: 14px;
+  }
+  .footer_left_link_img {
+    width: 20px;
+  }
+  .footer_right_submit {
+    font-size: 15px;
+    padding: 9px 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 314px;
+    background-size: cover;
+  }
+  .header_name {
+    height: 172px;
+    margin-top: 20px;
+  }
+  .header_name_title {
+    font-size: 25px;
+  }
+  .header_name_text {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .header_top_menu_link {
+    margin-left: 0;
+    margin-right: 17px;
+  }
+  .header_top_social_link:first-child {
+    margin-right: 9px;
+  }
+  .advantages_title {
+    font-size: 23px;
+  }
+  .advantages_block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantages_block_item {
+    margin-bottom: 18px;
+    width: 45%;
+  }
+  .advantages_block_item_icon {
+    display: none;
+  }
+  .advantages_block_item_texts_title {
+    font-size: 20px;
+  }
+  .advantages_block_item_texts_text {
+    font-size: 15px;
+  }
+  .turnkey_block_item_text {
+    max-width: 250px;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  .price_block {
+    max-height: none;
+  }
+  .price_block_it:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .price_block_it:nth-of-type(3) {
+    margin-bottom: 13px;
+  }
+  .tabs {
+    margin-top: 43px;
+  }
+  .tabs_item {
+    width: 215px;
+  }
+  .tabs_item_img_1, .tabs_item_img_2, .tabs_item_img_3 {
+    width: 215px;
+    height: 215px;
+  }
+  .order_form_item {
+    width: 562px;
+  }
+  .footer_right {
+    width: 343px;
+  }
+  .tabak_item {
+    width: 200px;
+    height: 200px;
+  }
+  .tabak_item_img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kate_item_icon_img {
+    width: 25px;
+  }
+  .kate_item_title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .kate_item_text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .mheader, .mheader_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header {
+    display: none;
+  }
+  .mcontainer {
+    display: block;
+    height: 430px;
+  }
+  .mslider_item {
+    height: 451px;
+  }
+  .mslider_item_top {
+    height: 54px;
+  }
+  .mslider_item_top_logo_img {
+    width: 60%;
+  }
+  .mslider_item_top_menu_link {
+    font-size: 13px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .mslider_item_top_social_link:first-child {
+    margin-right: 8px;
+  }
+  .mslider_item_top_social_link_img {
+    width: 15px;
+  }
+  .mslider_item_name {
+    height: 168px;
+    margin-top: 30px;
+  }
+  .mslider_item_name_contacts {
+    width: 490px;
+  }
+  .mslider_item_name_contacts_item_name {
+    font-size: 14px;
+  }
+  .mslider_item_name_contacts_item_text {
+    font-size: 12px;
+    line-height: 5px;
+  }
+  .mslider_item_name_title {
+    font-size: 25px;
+  }
+  .mslider_item_name_text {
+    font-size: 20px;
+    line-height: 0;
+  }
+  .advantages_s_title {
+    font-size: 18px;
+  }
+  .advantages_s_block {
+    max-height: none;
+  }
+  .advantages_s_block_item {
+    margin-bottom: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages_s_block_item_icon {
+    display: none;
+  }
+  .advantages_s_block_item_texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages_s_block_item_texts_title {
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .advantages_s_block_item_texts_text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .tabs_item {
+    width: 200px;
+  }
+  .tabs_item_img_1, .tabs_item_img_2, .tabs_item_img_3 {
+    width: 200px;
+    height: 200px;
+  }
+  .advantages_block {
+    max-height: 341px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantages_block {
+    max-height: none;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .advantages_block_item:nth-of-type(4) {
+    margin-bottom: 18px;
+  }
+  .advantages_block_item {
+    width: 80%;
+  }
+  .advantages_block_item_texts_title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .advantages_block_item_texts_text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .turnkey_title {
+    font-size: 18px;
+    line-height: 18px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    text-align: left;
+  }
+  .turnkey_block {
+    max-height: none;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .turnkey_block_item:nth-of-type(3) {
+    margin-bottom: 20px;
+  }
+  .turnkey_block_item {
+    margin-right: 0;
+  }
+  .turnkey_block_item_text {
+    font-size: 15px;
+  }
+  .tabs_item:nth-of-type(2) {
+    margin: 0;
+  }
+  .tabs_item {
+    width: 120px;
+  }
+  .tabs_item_img_1, .tabs_item_img_2, .tabs_item_img_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .tabs_item_title {
+    bottom: 15px;
+  }
+  .tabs_item_title_text {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .order_form_item {
+    width: 406px;
+  }
+  .order_form_item_text {
+    font-size: 14px;
+  }
+  .order_form_item_count {
+    width: 72px;
+    height: 28px;
+  }
+  .order_form_item_count_minus {
+    width: 20px;
+    padding-left: 3px;
+  }
+  .order_form_item_count_plus {
+    width: 20px;
+    padding-right: 3px;
+  }
+  .order_form_item_count_text {
+    font-size: 15px;
+  }
+  .order_form_item_total {
+    width: 73px;
+    font-size: 14px;
+  }
+  .order_form_item_select_radio_btn:not(:last-child) {
+    margin-right: 9px;
+  }
+  .order_form_item_select_radio_btn label {
+    height: 28px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .order_form_total {
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+  .order_form_total_price {
+    font-size: 18px;
+  }
+  .order_form_total_text {
+    font-size: 14px;
+    margin-right: 11px;
+  }
+  .order_form_request_title {
+    font-size: 16px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+  }
+  .order_form_request_item_input {
+    font-size: 14px;
+  }
+  .order_form_submit {
+    padding: 4px 16px;
+    font-size: 15px;
+    margin: 16px auto 0 auto;
+  }
+  .smoke_right {
+    text-align: end;
+    top: 275px;
+  }
+  .smoke_right_img {
+    width: 70%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_left {
+    margin-bottom: 41px;
+    height: 200px;
+  }
+  .footer_left_text_1 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .footer_left_text_2 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer_left_phone {
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer_left_links {
+    text-align: center;
+  }
+  .footer_right {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer_right_submit {
+    margin-left: auto;
+  }
+  .price_block_item_texts {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mslider_item {
+    height: 420px;
+  }
+  .advantages_title {
+    font-size: 18px;
+  }
+  .advantages_block_item_texts_title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .advantages_block_item_texts_text {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .turnkey_title {
+    font-size: 16px;
+  }
+  .turnkey_block_item {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+  .turnkey_block_item_icon {
+    width: 25px;
+  }
+  .turnkey_block_item_text {
+    font-size: 13px;
+  }
+  .smoke_right {
+    display: none;
+  }
+  .tabs_title {
+    font-size: 18px;
+  }
+  .tabs_item {
+    width: 100px;
+  }
+  .tabs_item_img_1, .tabs_item_img_2, .tabs_item_img_3 {
+    width: 100px;
+    height: 100px;
+  }
+  .tabs_item_title_text {
+    font-size: 14px;
+  }
+  .price_title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .price_block_item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .price_block_item_texts {
+    width: 200px;
+    margin-right: 10px;
+  }
+  .price_block_item_texts_name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .price_block_item_texts_text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .order {
+    margin-top: 50px;
+  }
+  .order_form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order_form_item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 270px;
+  }
+  .order_form_item_count_con {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 10px;
+  }
+  .order_form_item_count {
+    margin-left: 0;
+  }
+  .order_form_item_text {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .order_form_item_select {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 10px;
+  }
+  .order_form_item_total {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 50px;
+  }
+  .order_form_request_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order_form_request_item {
+    width: 300px;
+  }
+  .order_form_request_item_input:nth-of-type(2) {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .order_form_request_item_input {
+    margin-bottom: 10px;
+  }
+  .order_form_total {
+    width: 270px;
+  }
+  .tabak_title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
