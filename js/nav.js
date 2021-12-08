@@ -11,8 +11,8 @@ $(document).ready(function(){
     });
   $('.m-link').on('click', function (e) {
       e.preventDefault();
-      $('.mheader').toggleClass('mheader_active');
       tabActivate($(this).data('name'));
+      $('.mheader').toggleClass('mheader_active');
     });
   $('.mheader_btn_open').on('click', function (e) {
       e.preventDefault();
