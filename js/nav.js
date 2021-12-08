@@ -10,6 +10,12 @@ $(document).ready(function(){
       $('.mheader').toggleClass('mheader_active');
     });
   $('.m-link').on('click', function (e) {
+      $('a[href^="#"]').click(function(){ // #1
+        let anchor = $(this).attr('href');  // #2
+        $('html, body').animate({           // #3
+        scrollTop:  $(anchor).offset().top  // #4
+        }, 600);                            // #5
+      });
       document.location.hash = '#content';
       tabActivate($(this).data('name'));
       $('.mheader').toggleClass('mheader_active');
