@@ -37,7 +37,6 @@ $(document).ready(function(){
     });
     $('.page_'+name).show();
 
-    // 3 - обновляем хеш
-    document.location.hash = '#'+name;
+
   }
 })  
