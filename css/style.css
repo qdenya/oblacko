@@ -548,6 +548,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 4;
 }
 
 .tabs_item:hover {
