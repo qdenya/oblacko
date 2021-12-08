@@ -9,15 +9,18 @@ $(document).ready(function(){
       e.preventDefault();
       $('.mheader').toggleClass('mheader_active');
     });
+  $('.tabs_item').click(function(){
+    tabActivate($(this).data('name'));
+  })  
   $('.m-link').on('click', function (e) {
       e.preventDefault();
       tabActivate($(this).data('name'));
-      // $('a[href^="#"]').click(function(){ // #1
-      //   let anchor = $(this).attr('href');  // #2
-      //   $('html, body').animate({           // #3
-      //   scrollTop:  $(anchor).offset().top  // #4
-      //   }, 100);                            // #5
-      // });
+      $('a[href^="#"]').click(function(){ // #1
+        let anchor = $(this).attr('href');  // #2
+        $('html, body').animate({           // #3
+        scrollTop:  $(anchor).offset().top  // #4
+        }, 100);                            // #5
+      });
       
       $('.mheader').toggleClass('mheader_active');
     });
