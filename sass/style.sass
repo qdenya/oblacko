@@ -1,0 +1,809 @@
+body
+  font-family: 'Museo Sans', sans-serif
+  background-color: #1E1815
+
+.mslider
+  &_item_1
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img1.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+  &_item_2
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img2.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+  &_item_3
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img3.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+.mcontainer
+  display: none
+.mheader
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 199
+  width: 60%
+  height: 100vh
+  display: none
+  background-color: #1E1815
+  transition: 0.5s
+  box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.288)
+  transform: translateX(100%)
+  &_active
+    transform: translateX(0%)
+  &_tab
+    margin-left: 16px
+    margin-top: 27px
+    &_links
+      display: flex
+      height: 70%
+      flex-direction: column
+      &_items
+        margin-bottom: auto
+      &_items, &_info, &_phone
+        display: flex
+        flex-direction: column
+      &_info
+        margin-top: 18px
+      &_phone
+        margin-top: 93px
+        &_text
+          font-size: 13px
+          line-height: 16px
+          letter-spacing: 0.5px
+          text-transform: uppercase
+          color: #ffffff
+      &_item
+        font-size: 17px
+        line-height: 20px
+        text-transform: uppercase
+        color: #ffffff
+        text-decoration: none !important
+        &_black
+          color: #ffffff
+      &_item:not(:last-child)
+        margin-bottom: 10px
+      &_inst
+        margin-bottom: 12px
+  &_btn
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #FE3C81
+    border-radius: 20px
+    width: 99px
+    height: 29px
+    font-size: 12px
+    line-height: 20px
+    color: #FFFFFF
+    text-decoration: none !important
+    margin-top: 22px
+    &_close
+      background: url(../img/icons/cross.svg) no-repeat top center
+      display: flex
+      width: 18px
+      height: 18px
+      margin-bottom: 36px
+    &_open
+      background: url(../img/icons/hamburg.svg) no-repeat top center
+      display: flex
+      width: 20px
+      height: 18px
+      margin-right: 18px
+  &_top
+    height: 55px
+    width: 100%
+    //box-shadow: 10px 0px 24px rgb(255 255 255 / 10%)
+    margin-bottom: 31px
+    display: none
+    justify-content: space-between
+    align-items: center
+    top: 0
+    left: 0
+    position: fixed
+    z-index: 100
+    background-color: rgba(45, 45, 47, 0.8)
+  &_logo
+    width: 88px
+    margin-left: 13px
+  &_name
+    &_titles
+      position: absolute
+      top: 150px
+      z-index: 2
+      left: 0
+      right: 0
+    &_title
+      font-weight: 600
+      font-size: 22px
+      line-height: 20px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+      margin: 0
+      margin-bottom: 10px
+    &_text
+      font-weight: normal
+      font-size: 16px
+      line-height: 20px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+      margin: 0
+    &_contacts
+      position: absolute
+      top: 250px
+      z-index: 2
+      left: 0
+      right: 0
+      &_item
+        width: 200px
+        margin: 0 auto
+        &_phone
+          font-weight: 300
+          font-size: 14px
+          line-height: 22px
+          color: #ffffff
+          vertical-align: super
+          text-decoration: none
+        &_name
+          font-weight: 300
+          font-size: 14px
+          line-height: 22px
+          color: #ffffff
+          vertical-align: super
+.header
+  // display: flex
+  // flex-direction: column
+  // justify-content: space-between
+  height: 557px
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1E1815 95%, #1E1815 100%), url(../img/mix.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &_top
+    display: flex
+    height: 90px
+    width: 100%
+    justify-content: space-around
+    background: rgba(45, 45, 47, 0.8)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+    align-items: center
+    &_menu
+      display: flex
+      &_link
+        text-decoration: none
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        margin-left: 17px
+        margin-right: 17px
+    &_social
+      &_link_img
+        vertical-align: middle
+      &_link:first-child
+        margin-right: 25px
+    &_logo
+      text-align: center
+  &_name
+    justify-content: space-between
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    left: 0
+    right: 0
+    height: 269px
+    margin-top: 100px
+    &_title
+      font-weight: 600
+      font-size: 40px
+      line-height: 48px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+      margin: 0
+      margin-bottom: 5px
+    &_text
+      font-weight: normal
+      font-size: 33px
+      line-height: 40px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+      margin: 0
+    &_contacts
+      display: flex
+      width: 649px
+      justify-content: space-between
+      &_item
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_name
+          font-weight: 500
+          font-size: 18px
+          line-height: 22px
+          color: #FFFFFF
+          margin: 0
+        &_text
+          font-weight: 300
+          font-size: 16px
+          line-height: 19px
+          color: #FFFFFF
+          margin: 0
+  &_background
+    display: flex
+    height: 557px
+    // &_item
+    //   background: url(../img/img1.jpg)
+    //   background-size: cover
+    //   background-repeat: no-repeat
+    //   flex-grow: 1
+
+.smoke
+  &_right
+    z-index: 3
+    position: absolute
+    right: 0
+    top: 350px
+
+.advantages
+  &_title
+    font-weight: normal
+    font-size: 30px
+    line-height: 36px
+    color: #FFFFFF
+    text-align: center
+  &_block
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 310px
+    width: auto
+    align-content: center
+    justify-content: start
+    &_item:nth-of-type(4)
+      margin-bottom: 0
+    &_item:nth-of-type(7)
+      margin-bottom: 0
+    &_item
+      display: flex
+      align-items: center
+      margin-bottom: 35px
+      width: 509px
+      &_icon
+        margin-right: 34px
+      &_texts
+        &_title
+          font-weight: normal
+          font-size: 23px
+          line-height: 28px
+          color: #D3A270
+          margin: 0
+        &_text
+          font-weight: 300
+          font-size: 16px
+          line-height: 114%
+          color: #FFFFFF
+          margin: 0
+
+.turnkey
+  margin-top: 106px
+  &_title
+    text-align: center
+    margin-bottom: 40px
+    font-weight: normal
+    font-size: 23px
+    line-height: 28px
+    color: #D3A270
+  &_block
+    max-height: 179px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: auto
+    align-content: center
+    justify-content: start
+    &_item:nth-of-type(3)
+      margin-bottom: 0
+    &_item:nth-of-type(7)
+      margin-bottom: 0
+    &_item
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      margin-right: 50px
+      &_icon
+        margin-right: 20px
+        &_con
+          width: 35px
+          display: flex
+          justify-content: center
+      &_text
+        font-weight: 100
+        font-size: 16px
+        line-height: 114%
+        color: #FFFFFF
+        margin: 0
+
+.tabs
+  margin-top: 92px
+  &_title
+    font-weight: normal
+    font-size: 30px
+    line-height: 36px
+    color: #FFFFFF
+    text-align: center
+    margin-bottom: 45px
+  &_items
+    display: flex
+    justify-content: center
+    z-index: 4
+  &_item:hover
+    border: 3px solid #C6A580
+    filter: drop-shadow(0px 0px 10px #C6A580)
+    transition: 0.1s ease-in-out
+  &_item:nth-of-type(2)
+    margin-right: 30px
+    margin-left: 30px
+  &_item
+    width: 303px
+    position: relative
+    border: 3px solid transparent
+    padding: 2px
+    transition: 0.1s ease-in-out
+    cursor: pointer
+    &_active
+      border: 3px solid #C6A580
+    &_img
+      &_1
+        background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/kalyan.png) no-repeat
+        background-size: contain
+        width: 303px
+        height: 303px
+      &_2
+        background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/katering.png) no-repeat
+        background-size: contain
+        width: 303px
+        height: 303px
+      &_3
+        background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/autsorsing.png) no-repeat
+        background-size: contain
+        width: 303px
+        height: 303px
+    &_title
+      position: absolute
+      bottom: 10px
+      right: 0
+      left: 0
+      &_icon
+        height: 8px
+        display: flex
+        margin: 0 auto
+      &_text
+        font-weight: normal
+        font-size: 25px
+        line-height: 30px
+        color: #FFFFFF
+        margin: 0
+        text-align: center
+        margin-bottom: 10px
+
+.price
+  margin-top: 92px
+  &_title
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    color: #FFFFFF
+    text-align: center
+    margin-bottom: 34px
+  &_block
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 216px
+    align-content: center
+    &_it:nth-of-type(1)
+      margin-right: 35px
+    &_it:nth-of-type(3)
+      margin-bottom: 0
+    &_it
+      display: flex
+      flex-direction: column
+      margin-bottom: 13px
+      width: 493px
+      padding-bottom: 13px
+      border-bottom: 1px solid #C6A580
+    &_item
+      display: flex
+      justify-content: space-between
+      &_texts
+        display: flex
+        flex-direction: column
+        width: 400px
+        &_name
+          font-weight: 500
+          font-size: 16px
+          line-height: 19px
+          color: #FFFFFF
+          margin-bottom: 6px
+        &_text
+          font-weight: 100
+          font-size: 15px
+          line-height: 18px
+          color: #FFFFFF
+      &_total
+        &_text
+          font-weight: 300
+          font-size: 20px
+          line-height: 24px
+          color: #FFFFFF
+
+.order
+  margin-top: 75px
+  &_form
+    display: flex
+    flex-direction: column
+    align-content: center
+    flex-wrap: wrap
+    &_item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 647px
+      margin-top: 15px
+      padding-bottom: 15px
+      border-bottom: 1px solid #C6A580
+      &_count
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 121px
+        height: 38px
+        border: 2px solid #E0AC76
+        border-radius: 4px
+        margin-left: auto
+        &_text
+          font-weight: 300
+          font-size: 18px
+          line-height: 22px
+          color: #FFFFFF
+        &_minus
+          padding-left: 10px
+          cursor: pointer
+        &_plus
+          padding-right: 10px
+          cursor: pointer
+      &_text
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+      &_total
+        font-weight: 300
+        font-size: 20px
+        line-height: 24px
+        color: #FFFFFF
+        width: 119px
+        text-align: end
+      &_select
+        margin-left: auto
+      &_select_radio_btn
+        display: inline-flex
+      &_select_radio_btn:not(:last-child)
+        margin-right: 15px
+      &_select_radio_btn input[type=radio]
+        display: none
+      &_select_radio_btn label
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        cursor: pointer
+        border: 2px solid #AFAFAF
+        border-radius: 4px
+        user-select: none
+        padding: 0 19px
+        height: 38px
+        color: #fff
+        font-weight: 300
+        font-size: 15px
+        line-height: 18px
+      &_select_radio_btn input[type=radio]:checked + label::after
+        display: block
+        position: absolute
+        top: -11px
+        right: -11px
+        content: ""
+        height: 16px
+        width: 16px
+        border-radius: 50%
+        border: 2px solid #1E1815
+        background: url(../img/icons/tick.svg) #E0AC76
+        background-repeat: no-repeat
+        background-position: center left 2px
+        transition: width 0.4s ease-in-out
+      &_select_radio_btn input[type=radio]:checked + label
+        border: 2px solid #E0AC76
+        font-weight: normal
+    &_total
+      display: flex
+      align-items: baseline
+      justify-content: end
+      padding-top: 32px
+      padding-bottom: 22px
+      border-bottom: 1px solid #E0AC76
+
+      &_price, &_price-kate
+        font-weight: normal
+        font-size: 22px
+        line-height: 0px
+        color: #FFFFFF
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        margin-right: 20px
+    &_request
+      &_title
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        color: #FFFFFF
+        margin-top: 22px
+        margin-bottom: 31px
+      &_items
+        display: flex
+        justify-content: space-between
+      &_item
+        width: 49%
+        display: flex
+        flex-direction: column
+        &_input
+          padding: 8px 16px
+          border: 2px solid #AFAFAF
+          border-radius: 4px
+          color: #fff
+          background-color: transparent
+          outline: none
+          font-weight: 300
+          font-size: 16px
+          line-height: 19px
+        &_input:nth-of-type(2)
+          margin-top: 15px
+          margin-bottom: 15px
+      &_item textarea
+        resize: none
+        margin: 0
+        height: 100%
+    &_submit
+      padding: 9px 24px
+      border: 2px solid #E0AC76
+      border-radius: 4px
+      font-weight: normal
+      font-size: 19px
+      line-height: 23px
+      color: #E0AC76
+      text-decoration: none
+      margin: 34px auto 0 auto
+      background: transparent
+      cursor: pointer
+
+.container
+  width: 90% !important
+
+.card
+  transition: 0.1s
+  min-height: 330px
+  border-radius: 10px
+  user-select: none
+  border: none
+  &_title
+    &_1
+      font-weight: normal
+      font-size: 90px
+      line-height: 68px
+      letter-spacing: -0.01em
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+    &_2
+      font-weight: normal
+      font-size: 60px
+      line-height: 83.15%
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+    &_3
+      font-weight: normal
+      font-size: 60px
+      line-height: 83.15%
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+  &_text
+    &_1
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+    &_2
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+    &_3
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #FFFFFF
+      margin: 0
+      background-color: rgba(0, 0, 0, 0.45)
+      padding-left: 10px
+
+  &_1
+    background: #DCDEFF url('../img/kate/1.png') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: end
+  &_2
+    background: #79B4D9 url('../img/kate/2.png') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: end
+  &_3
+    background: #CCE1E6 url('../img/kate/3.png') no-repeat
+    background-size: cover
+  &_4
+    background: #E0D3C3 url('../img/kate/4.png') no-repeat
+    background-size: cover
+  &_5
+    background: #79B4D9 url('../img/kate/5.png') no-repeat
+    background-size: cover
+  &_6
+    background: #79B4D9 url('../img/kate/6.png') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: end
+
+.card:hover
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3))
+  transition: 0.1s
+
+.tabak
+  margin-top: 70px
+  &_title
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    color: #FFFFFF
+    text-align: center
+    margin-bottom: 34px
+  &_item
+    width: 300px
+    height: 300px
+    &_img
+      background-image: url(../img/icons/tabak/im1.png)
+      background-size: contain
+      width: 300px
+      height: 300px
+
+.footer
+  display: flex
+  justify-content: space-around
+  margin-top: 140px
+  margin-bottom: 20px
+  &_left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &_text
+      &_1
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+      &_2
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+    &_phone
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #FFFFFF
+      text-decoration: none
+    &_link:last-child
+      margin-left: 25px
+  &_right
+    width: 525px
+    display: flex
+    flex-direction: column
+    &_title
+      font-weight: normal
+      font-size: 20px
+      line-height: 24px
+      color: #FFFFFF
+      margin-bottom: 30px
+    &_input
+      padding: 8px 16px
+      border: 2px solid #AFAFAF
+      border-radius: 4px
+      color: #fff
+      background-color: transparent
+      outline: none
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      margin-bottom: 15px
+    &_submit
+      padding: 14px 24px
+      border: 2px solid #E0AC76
+      border-radius: 4px
+      font-weight: normal
+      font-size: 19px
+      line-height: 23px
+      color: #E0AC76
+      text-decoration: none
+      margin-right: auto
+
+.kate
+  &_item
+    &_title
+      font-weight: normal
+      font-size: 20px
+      line-height: 25px
+      color: #FFFFFF
+      margin-bottom: 10px
+      margin-top: 23px
+    &_text
+      font-weight: 300
+      font-size: 16px
+      line-height: 20px
+      color: #FFFFFF
+      margin: 0
+    &_icon_img
+      height: 30px
+    &_dop
+      display: flex
+      &_icon
+        margin-right: 10px
+.autsor
+  display: flex
+  flex-direction: column
+  align-items: center
+  &_title
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    color: #fff
+  &_block
+    &_item
+      display: flex
+      align-items: center
+      &_text
+        margin-left: 10px
+        font-weight: 300
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
