@@ -774,6 +774,10 @@ body {
   margin-left: auto;
 }
 
+.order_form_item_count_con {
+  margin-left: auto;
+}
+
 .order_form_item_count_text {
   font-weight: 300;
   font-size: 18px;
