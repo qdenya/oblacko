@@ -538,6 +538,9 @@
   .price_block {
     -ms-flex-line-pack: center;
         align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .price_block_it {
     width: 80%;
