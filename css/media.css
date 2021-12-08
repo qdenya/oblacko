@@ -332,6 +332,15 @@
   .advantages_block_item:nth-of-type(4) {
     margin-bottom: 18px;
   }
+  .advantages_block_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .advantages_block_item {
     width: 80%;
   }
@@ -429,6 +438,8 @@
     font-size: 16px;
     margin-top: 11px;
     margin-bottom: 9px;
+    width: 80%;
+    margin: 10px auto 10px auto;
   }
   .order_form_request_item {
     -webkit-box-orient: vertical;
@@ -438,6 +449,13 @@
   }
   .order_form_request_item_input {
     font-size: 14px;
+  }
+  .order_form_request_item_input:nth-of-type(2) {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .order_form_request_item_input {
+    margin-bottom: 10px;
   }
   .order_form_submit {
     padding: 4px 16px;
