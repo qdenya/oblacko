@@ -10,7 +10,7 @@ $(document).ready(function(){
       $('.mheader').toggleClass('mheader_active');
     });
   $('.m-link').on('click', function (e) {
-      
+      document.location.hash = '#content';
       tabActivate($(this).data('name'));
       $('.mheader').toggleClass('mheader_active');
       e.preventDefault();
