@@ -19,6 +19,11 @@ $(document).ready(function(){
   $('.header_top_menu_link').click(function(){
     tabActivate($(this).data('name'));
   })
+  $('.mheader_tab_links_item').click(function(){
+    tabActivate($(this).data('name'));
+  })
+
+  
 
   function tabActivate(name){
     tabs.each(function(ind, tab){
