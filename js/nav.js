@@ -5,7 +5,7 @@ $(document).ready(function(){
       e.preventDefault();
       $('.mheader').toggleClass('mheader_active');
     });
-  $('.mheader_tab_links_item').on('click', function (e) {
+  $('.m-link').on('click', function (e) {
       e.preventDefault();
       $('.mheader').toggleClass('mheader_active');
       tabActivate($(this).data('name'));
