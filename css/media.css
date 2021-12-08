@@ -430,6 +430,12 @@
     margin-top: 11px;
     margin-bottom: 9px;
   }
+  .order_form_request_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .order_form_request_item_input {
     font-size: 14px;
   }
