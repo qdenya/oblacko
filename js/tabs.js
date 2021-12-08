@@ -16,9 +16,6 @@ $(document).ready(function(){
   $('.tabs_item').click(function(){
     tabActivate($(this).data('name'));
   })
-  $('.header_top_menu_link').click(function(){
-    tabActivate($(this).data('name'));
-  })
   $('.mheader_tab_links_item').click(function(){
     tabActivate($(this).data('name'));
   })
