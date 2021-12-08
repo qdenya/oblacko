@@ -1,12 +1,9 @@
 $(document).ready(function(){
   let tabs = $('.tabs_item');
   let pages = $('.tabs_content_item');
-  // if (hash) {
-  //   let name = hash.slice(1);
-  //   tabActivate(name);
-  // }else{
-    tabActivate('one');
-  //}
+
+  tabActivate('one');
+  
   
   $('.mheader_btn_close').on('click', function (e) {
       e.preventDefault();
