@@ -535,6 +535,9 @@
     font-size: 18px;
     margin-bottom: 14px;
   }
+  .price_block_it {
+    width: 80%;
+  }
   .price_block_item {
     -webkit-box-align: start;
         -ms-flex-align: start;
