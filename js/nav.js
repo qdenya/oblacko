@@ -1,10 +1,7 @@
 $(document).ready(function(){
   let tabs = $('.tabs_item');
   let pages = $('.tabs_content_item');
-  if (hash) {
-    let name = hash.slice(1);
-    tabActivate(name);
-  }else{
+  if (!hash) {
     tabActivate('one');
   }
   $('.tabs_item').click(function(){
@@ -36,7 +33,5 @@ $(document).ready(function(){
       $(page).hide();
     });
     $('.page_'+name).show();
-
-
   }
 })  
