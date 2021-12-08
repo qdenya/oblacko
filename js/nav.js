@@ -11,13 +11,14 @@ $(document).ready(function(){
     });
   $('.m-link').on('click', function (e) {
       e.preventDefault();
+      tabActivate($(this).data('name'));
       $('a[href^="#"]').click(function(){ // #1
         let anchor = $(this).attr('href');  // #2
         $('html, body').animate({           // #3
         scrollTop:  $(anchor).offset().top  // #4
         }, 100);                            // #5
       });
-      tabActivate($(this).data('name'));
+      
       $('.mheader').toggleClass('mheader_active');
     });
   $('.mheader_btn_open').on('click', function (e) {
