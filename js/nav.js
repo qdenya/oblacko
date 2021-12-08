@@ -1,16 +1,19 @@
-      $('.mheader_btn_close').on('click', function (e) {
-          e.preventDefault();
-          $('.mheader').toggleClass('mheader_active');
-        });
-      $('.mheader_tab_links_item').on('click', function (e) {
-          e.preventDefault();
-          $('.mheader').toggleClass('mheader_active');
-          tabActivate($(this).data('name'));
-        });
-      $('.mheader_btn_open').on('click', function (e) {
-          e.preventDefault();
-          $('.mheader').toggleClass('mheader_active');
-        })  
+$(document).ready(function(){
+  let tabs = $('.tabs_item');
+  let pages = $('.tabs_content_item');
+  $('.mheader_btn_close').on('click', function (e) {
+      e.preventDefault();
+      $('.mheader').toggleClass('mheader_active');
+    });
+  $('.mheader_tab_links_item').on('click', function (e) {
+      e.preventDefault();
+      $('.mheader').toggleClass('mheader_active');
+      tabActivate($(this).data('name'));
+    });
+  $('.mheader_btn_open').on('click', function (e) {
+      e.preventDefault();
+      $('.mheader').toggleClass('mheader_active');
+    })  
 
   function tabActivate(name){
     tabs.each(function(ind, tab){
@@ -28,3 +31,4 @@
     // 3 - обновляем хеш
     document.location.hash = '#'+name;
   }
+})  
