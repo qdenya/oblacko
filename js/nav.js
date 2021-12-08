@@ -10,6 +10,10 @@ $(document).ready(function(){
       $('.mheader').toggleClass('mheader_active');
       tabActivate($(this).data('name'));
     });
+  $('.m-linke').on('click', function (e) {
+      e.preventDefault();
+      $('.mheader').toggleClass('mheader_active');
+    });  
   $('.mheader_btn_open').on('click', function (e) {
       e.preventDefault();
       $('.mheader').toggleClass('mheader_active');
