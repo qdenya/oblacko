@@ -325,6 +325,9 @@
     max-height: none;
     -ms-flex-line-pack: center;
         align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .advantages_block_item:nth-of-type(4) {
     margin-bottom: 18px;
