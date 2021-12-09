@@ -1138,10 +1138,29 @@ body {
 }
 
 .tabak_item_img {
-  background-image: url(../img/icons/tabak/im1.png);
   background-size: contain;
   width: 300px;
   height: 300px;
+}
+
+.tabak_1 {
+  background-image: url(../img/tobaco/1.png);
+}
+
+.tabak_2 {
+  background-image: url(../img/tobaco/2.png);
+}
+
+.tabak_3 {
+  background-image: url(../img/tobaco/3.png);
+}
+
+.tabak_4 {
+  background-image: url(../img/tobaco/4.png);
+}
+
+.tabak_5 {
+  background-image: url(../img/tobaco/5.png);
 }
 
 .footer {
