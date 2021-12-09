@@ -391,7 +391,7 @@
     margin-bottom: 3px;
   }
   .order_form_item {
-    width: 406px;
+    width: 378px;
   }
   .order_form_item_text {
     font-size: 14px;
@@ -412,7 +412,7 @@
     font-size: 15px;
   }
   .order_form_item_total {
-    width: 73px;
+    width: 65px;
     font-size: 14px;
   }
   .order_form_item_select_radio_btn:not(:last-child) {
@@ -441,11 +441,14 @@
     width: 80%;
     margin: 10px auto 10px auto;
   }
-  .order_form_request_item {
+  .order_form_request_items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .order_form_request_item {
+    width: auto;
   }
   .order_form_request_item_input {
     font-size: 14px;
@@ -460,7 +463,7 @@
   .order_form_submit {
     padding: 4px 16px;
     font-size: 15px;
-    margin: 16px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
   .smoke_right {
     text-align: end;

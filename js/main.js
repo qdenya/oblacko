@@ -3,28 +3,27 @@ const formHome = document.querySelector('.order_form_rend');
 const totalPriceTag = document.querySelector('.order_form_total_price');
 
 let baner = localStorage.getItem('qdenya');
-let login = [0, 0];
 
-function check() {
-  if(baner) {
-    loadBaner();
-  } else {
-    localStorage.setItem("qdenya", login);
-  }
-}
+let login = ["1", "2"];
+//localStorage.setItem("qdenya", JSON.stringify(login));
+
+
 
 const loadBaner = function() {
-  if(localStorage.getItem(login)) {
-    JSON.parse(localStorage.getItem(login)).forEach(function(item) {
+  if(localStorage.getItem(baner)) {
+    JSON.parse(localStorage.getItem(baner)).forEach(function(item) {
       console.log(item);
     });
   }
 };
 
-const saveCart = function() {
-  localStorage.setItem(login, JSON.stringify(cart));
-};
-
+function check() {
+  if(baner) {
+    loadBaner();
+  } else {
+    localStorage.setItem("qdenya", JSON.stringify(login));
+  }
+}
 
 const order = [];
 
