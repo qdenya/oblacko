@@ -392,6 +392,8 @@
   }
   .order_form_item {
     width: 378px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .order_form_item_text {
     font-size: 14px;
@@ -475,7 +477,7 @@
     margin-top: 11px;
     margin-bottom: 9px;
     width: 80%;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 10px 0;
   }
   .order_form_request_items {
     -webkit-box-orient: vertical;
