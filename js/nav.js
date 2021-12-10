@@ -2,7 +2,7 @@ $(document).ready(function(){
   let tabs = $('.tabs_item');
   let pages = $('.tabs_content_item');
 
-  //tabActivate('one');
+  tabActivate('one');
 
   $('.mheader_btn_close').on('click', function (e) {
       e.preventDefault();
