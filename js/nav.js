@@ -14,10 +14,10 @@ $(document).ready(function(){
   $('.m-link').on('click', function (e) {
       e.preventDefault();
       tabActivate($(this).data('name'));
-      
+
       let anchor = $(this).attr('href');  // #2
       $('html, body').animate({           // #3
-      scrollTop:  $(anchor).offset().top  // #4
+      scrollTop:  $(anchor).offset().top - 100  // #4
       }, 100);                            // #5
       
       $('.mheader').toggleClass('mheader_active');
