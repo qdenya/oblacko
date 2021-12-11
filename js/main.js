@@ -1,29 +1,65 @@
 'use strict';
 const formHome = document.querySelector('.order_form_rend');
-const totalPriceTag = document.querySelector('.order_form_total_price');
+const totalPriceTag = document.querySelector('.order_form_total_price'); 
+const btnSbm = document.querySelector('.order_form_submit');
+const modal = document.querySelector('.modal');
+const modalBtn = document.querySelector('.modal_item_btn');
+const modalTitle = document.querySelector('.modal_item_title');
+const modalText = document.querySelector('.modal_item_text');
+const modalTabak1 = document.querySelector(".modal_tabak_right");
+const modalTabak2 = document.querySelector(".modal_tabak_left");
 
 let baner = localStorage.getItem('qdenya');
+let login = [1, 0];
 
-let login = ["1", "2"];
-//localStorage.setItem("qdenya", JSON.stringify(login));
-
-
+function toggleModal() {
+  modal.classList.toggle("modal_visible");
+}
 
 const loadBaner = function() {
-  if(localStorage.getItem(baner)) {
-    JSON.parse(localStorage.getItem(baner)).forEach(function(item) {
-      console.log(item);
-    });
-  }
+    let pars = JSON.parse(localStorage.getItem("qdenya"));
+    if(pars[0] == 1) {
+      modalTitle.textContent = "Просмотр данного сайта разрешён только лицам, достигшим возраста 18 лет.";
+      modalText.textContent = "Нажав кнопку “Подтверждаю”, Вы подтверждаете, что Вам исполнилось 18 лет.";
+      modalBtn.textContent = "Подтверждаю";
+      toggleModal();
+      modalBtn.addEventListener("click", function() {
+        toggleModal();
+        login = [0, 0];
+        localStorage.setItem('qdenya', JSON.stringify(login));
+      });
+    }
+    if(pars[1] == 1) {
+      modalTitle.textContent = "Заявка отправлена";
+      modalText.textContent = "Совсем скоро мы свяжемся с Вами!";
+      modalBtn.textContent = "Закрыть";
+      modal.style.backgroundColor = "rgba(30, 24, 21, 0.6)";
+      modalTabak1.style.display = "none";
+      modalTabak2.style.display = "none";
+      toggleModal();
+      modalBtn.addEventListener("click", function() {
+        toggleModal();
+        login = [0, 0];
+        localStorage.setItem('qdenya', JSON.stringify(login));
+      });
+    }
 };
 
 function check() {
   if(baner) {
     loadBaner();
   } else {
-    localStorage.setItem("qdenya", JSON.stringify(login));
+    localStorage.setItem('qdenya', JSON.stringify(login));
+    loadBaner();
   }
 }
+
+function setBanner() {
+  login = [0, 1];
+  localStorage.setItem('qdenya', JSON.stringify(login));
+}
+
+check();
 
 const order = [];
 
@@ -158,6 +194,7 @@ getData('./db/formHome.json').then(function(data){
 });
 
 formHome.addEventListener('click', changeCount);
+btnSbm.addEventListener('click', setBanner);
 
 renderCart();
 console.log(order);

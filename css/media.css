@@ -315,6 +315,20 @@
   .advantages_block {
     max-height: 341px;
   }
+  .modal_item {
+    width: 85%;
+  }
+  .modal_item_title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .modal_item_text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .modal_item_btn {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
