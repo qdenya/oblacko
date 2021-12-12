@@ -4,6 +4,7 @@ const pageOne = document.querySelector('.page_one');
 const pageTwo = document.querySelector('.page_two');
 const tabs = document.querySelector('.tabs_items');
 const header = document.querySelector('.header');
+const mheader = document.querySelector('.mheader');
 
 const modal = document.querySelector('.modal');
 const modalBtn = document.querySelector('.modal_item_btn');
@@ -288,9 +289,10 @@ function init() {
   const btnSbm = document.querySelector('.order_form_submit');
   formHome.addEventListener('click', changeCount);
   btnSbm.addEventListener('click', setBanner);
-  
+
   tabs.addEventListener('click', openForm);
   header.addEventListener('click', openForm);
+  mheader.addEventListener('click', openForm);
 }
 
 init();
