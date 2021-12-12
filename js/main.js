@@ -276,10 +276,6 @@ function openForm(event) {
 }
 
 
-//
-
-//renderCart();
-
 function init() {
   check();
   getData('./db/formHome.json').then(function(data){
