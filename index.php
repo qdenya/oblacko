@@ -1,5 +1,5 @@
 <?php
-header('Location: https://qdenya.ru/kal/index.html');
+header('Location: https://qdenya.github.io/oblacko/index.html');
 
 if (isset($_POST)) {
     print_r($_POST);
