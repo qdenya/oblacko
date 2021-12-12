@@ -203,7 +203,7 @@ function changeCount(event) {
 function openForm(event) {
   const target = event.target;
   const offer = target.closest('.tabs_item');
-  const offerHead = target.closest('.header_top_menu_link');
+  const offerHead = target.closest('.m-link');
 
   const formOld = document.querySelector('.order');
   if(formOld) {
