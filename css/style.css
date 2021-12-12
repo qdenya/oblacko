@@ -1060,6 +1060,7 @@ body {
 .card_1 {
   background: #DCDEFF url("../img/kate/1.png") no-repeat;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,6 +1076,7 @@ body {
 .card_2 {
   background: #79B4D9 url("../img/kate/2.png") no-repeat;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1090,21 +1092,25 @@ body {
 .card_3 {
   background: #CCE1E6 url("../img/kate/3.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card_4 {
   background: #E0D3C3 url("../img/kate/4.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card_5 {
   background: #79B4D9 url("../img/kate/5.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card_6 {
   background: #79B4D9 url("../img/kate/6.png") no-repeat;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
