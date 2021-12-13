@@ -1,6 +1,6 @@
 'use strict';
 function setBanner() {
-  login = [0, 1];
+  let login = [0, 1];
   localStorage.setItem('qdenya', JSON.stringify(login));
 }
 function init() {
