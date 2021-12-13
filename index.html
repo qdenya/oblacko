@@ -705,13 +705,13 @@
         </a>
       </div>
     </div>
-    <div class="footer_right">
+    <form name="contacts" method="POST" action="https://qdenya.ru/kal/index.php" class="footer_right">
       <span class="footer_right_title">Контактные данные</span>
-      <input type="text" class="footer_right_input" placeholder="Имя, Фамилия">
-      <input type="text" class="footer_right_input" placeholder="+375(">
-      <textarea class="footer_right_input" placeholder="Сообщение"></textarea>
-      <a href="#" class="footer_right_submit">Бесплатная консультация</a>
-    </div>
+      <input type="text" name="Имя, фамилия" class="footer_right_input" placeholder="Имя, Фамилия" required>
+      <input type="number" name="Телефон" class="footer_right_input" placeholder="+375(" required>
+      <textarea class="footer_right_input" placeholder="Сообщение" name="Сообщение:" required></textarea>
+      <input type="submit" class="footer_right_submit" value="Бесплатная консультация">
+    </form>
   </footer>
 
   <div class="smoke_right">
