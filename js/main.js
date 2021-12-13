@@ -1,5 +1,5 @@
 'use strict';
-
+new WOW().init();
 const pageOne = document.querySelector('.page_one');
 const pageTwo = document.querySelector('.page_two');
 const tabs = document.querySelector('.tabs_items');
@@ -111,7 +111,7 @@ function createForm(items) {
   }
 
   let card =  `
-    <div class="order_form_item">
+    <div class="order_form_item  wow fadeInUp">
       <span class="order_form_item_text">${name}</span>
       `+ tip + `
       <span class="order_form_item_total">${price*count} BYN</span>
