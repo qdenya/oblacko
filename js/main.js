@@ -283,8 +283,10 @@ function init() {
   });
   const formHome = document.querySelector('.order_form_rend');
   const btnSbm = document.querySelector('.order_form_submit');
+  const btnSbmForm = document.querySelector('.footer_right_submit');
   formHome.addEventListener('click', changeCount);
   btnSbm.addEventListener('click', setBanner);
+  btnSbmForm.addEventListener('click', setBanner);
 
   tabs.addEventListener('click', openForm);
   header.addEventListener('click', openForm);
