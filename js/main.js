@@ -102,7 +102,7 @@ function createForm(items) {
           }
         tip = tip + 
          `<div class="order_form_item_select_radio_btn select-button">
-            <input class="order_form_item_select_radio" id="radio-${id+'-'+variable[i][0]}" type="radio" name="radio${id}" value="1" `+chek+`>
+            <input class="order_form_item_select_radio" id="radio-${id+'-'+variable[i][0]}" type="radio" name="radio${id}" value="${variable[i][1]}" `+chek+`>
             <label for="radio-${id+'-'+variable[i][0]}" data-id=${id} data-price=${variable[i][2]}>${variable[i][1]}</label>
           </div>`;
       }
@@ -154,7 +154,7 @@ function renderCart() {
           }
           tip = tip + 
           `<div class="order_form_item_select_radio_btn ">
-              <input class="order_form_item_select_radio " id="radio-${id+'-'+variable[i][0]}" type="radio" name="radio${id}" value="1" `+ chek +`>
+              <input class="order_form_item_select_radio " id="radio-${id+'-'+variable[i][0]}" type="radio" name="radio${id}" value="${variable[i][1]}" `+ chek +`>
               <label class="select-button" for="radio-${id+'-'+variable[i][0]}" data-id=${id} data-price=${variable[i][2]}>${variable[i][1]}</label>
             </div>`;
         }
@@ -215,7 +215,7 @@ function openForm(event) {
   form.className = 'order';
   form.insertAdjacentHTML('beforeend', `
   <h1 class="price_title">Оформить заказ</h1>
-  <form name="feedback" method="POST" action="https://qdenya.ru/kal/index.php" class="order_form">
+  <form name="feedback" method="POST" action="https://catering-center.by/index.php" class="order_form">
     <div class="order_form_rend"></div>
     <div class="order_form_total">
       <span class="order_form_total_text">К оплате</span>
