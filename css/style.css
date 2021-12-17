@@ -1443,5 +1443,5 @@ body {
 }
 
 .swiper-kate {
-  overflow: visible;
+  overflow: visible !important;
 }
