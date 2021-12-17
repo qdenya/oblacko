@@ -205,6 +205,25 @@
 }
 
 @media (max-width: 768px) {
+  .card_title_1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .card_title_2 {
+    font-size: 30px;
+  }
+  .card_title_3 {
+    font-size: 35px;
+  }
+  .card_text_1 {
+    font-size: 15px;
+  }
+  .card_text_2 {
+    font-size: 15px;
+  }
+  .card_text_3 {
+    font-size: 15px;
+  }
   .kate_item_icon_img {
     width: 25px;
   }
