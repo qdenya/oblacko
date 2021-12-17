@@ -375,53 +375,54 @@
     </div>
     <div class="tabs_content_item page_two">
       <h1 class="tabak_title">Кейтеринг</h1>
-      <div class="tabs_container">
-        <div class="row">
-          <div class="col-xl-4 col-lg-6 wow fadeInUp">
-            <div class="card card_1 mb-4">
-              <p class="card_text_1">фестиваль посетило</p>
-              <h3 class="card_title_1">29000</h3>
-              <p class="card_text_1">человек</p>
+      <div class="tabs_container ">
+        <div class="swiper-kate"> 
+          <div class="row swiper-wrap-kate">
+            <div class="col-xl-4 col-lg-6 swiper-slide-kate">
+              <div class="card card_1 mb-4">
+                <p class="card_text_1">фестиваль посетило</p>
+                <h3 class="card_title_1">29000</h3>
+                <p class="card_text_1">человек</p>
+              </div>
+            </div>
+            <!-- /.col-6 -->
+            <div class="col-xl-8 col-lg-6 swiper-slide-kate">
+              <div class="card card_2 mb-4">
+                <p class="card_text_2">
+                  полная организация нашей
+                </p>
+                <h3 class="card_title_2">ЛАНУЖ-ЗОНЫ</h3>
+                <p class="card_text_2">
+                  на фестивале
+                </p>
+              </div>
+            </div>
+            <!-- /.col-6 -->
+            <div class="col-xl-3 col-lg-6 swiper-slide-kate">
+              <div class="card card_3 mb-4">
+                
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 swiper-slide-kate">
+              <div class="card card_4 mb-4">
+            
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 swiper-slide-kate">
+              <div class="card card_5 mb-4">
+                
+              </div>
+            </div>
+            <!-- /.col-9 -->
+            <div class="col-xl-3 col-lg-6 swiper-slide-kate">
+              <div class="card card_6">
+                <h3 class="card_title_3">тысячи</h3>
+                <p class="card_text_3">
+                  довольных людей нашим сервисом
+                </p>
+              </div>
             </div>
           </div>
-          <!-- /.col-6 -->
-          <div class="col-xl-8 col-lg-6 wow fadeInUp">
-            <div class="card card_2 mb-4">
-              <p class="card_text_2">
-                полная организация нашей
-              </p>
-              <h3 class="card_title_2">ЛАНУЖ-ЗОНЫ</h3>
-              <p class="card_text_2">
-                на фестивале
-              </p>
-            </div>
-          </div>
-          <!-- /.col-6 -->
-          <div class="col-xl-3 col-lg-6 wow fadeInUp">
-            <div class="card card_3 mb-4">
-              
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6 wow fadeInUp">
-            <div class="card card_4 mb-4">
-          
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6 wow fadeInUp">
-            <div class="card card_5 mb-4">
-              
-            </div>
-          </div>
-          <!-- /.col-9 -->
-          <div class="col-xl-3 col-lg-6 wow fadeInUp">
-            <div class="card card_6">
-              <h3 class="card_title_3">тысячи</h3>
-              <p class="card_text_3">
-                довольных людей нашим сервисом
-              </p>
-            </div>
-          </div>
-      
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-6 mt-4 wow fadeInUp">
@@ -779,6 +780,29 @@
         delay: 5000,
       },
     });
+    
+  </script>
+  <script>
+    const swiperKate = document.querySelector(".swiper-kate");
+    const swiperWrapKate = document.querySelector(".swiper-wrap-kate");
+    const swiperSlideKate = document.querySelectorAll(".swiper-slide-kate");
+
+    if (document.documentElement.clientWidth < 768) {
+      swiperKate.classList.toggle("mySwiper3");
+      swiperKate.classList.toggle("swiper");
+      swiperWrapKate.classList.toggle("row");
+      swiperWrapKate.classList.toggle("swiper-wrapper");
+      swiperSlideKate.forEach(item => {
+            item.classList.toggle("swiper-slide");
+        })
+      //
+      var swiper3 = new Swiper(".mySwiper3", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+      }
   </script>
 </body>
 </html>

@@ -12,6 +12,7 @@ const modalTitle = document.querySelector('.modal_item_title');
 const modalText = document.querySelector('.modal_item_text');
 const modalTabak1 = document.querySelector(".modal_tabak_right");
 const modalTabak2 = document.querySelector(".modal_tabak_left");
+
 let baner = localStorage.getItem('qdenya');
 let login = [1, 0];
 let order = [];
