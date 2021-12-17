@@ -1275,6 +1275,16 @@ body {
   cursor: pointer;
 }
 
+.kate_title {
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
 .kate_item_title {
   font-weight: normal;
   font-size: 20px;
