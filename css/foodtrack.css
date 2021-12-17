@@ -44,8 +44,8 @@ body {
   margin: 0;
 }
 
-.main_photo_img {
-  width: 100%;
+.main_photo {
+  text-align: center;
 }
 
 .main_item_title {

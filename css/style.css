@@ -690,6 +690,10 @@ body {
   border-bottom: 1px solid #C6A580;
 }
 
+.price_block_it_kate {
+  margin-bottom: 13px !important;
+}
+
 .price_block_item {
   display: -webkit-box;
   display: -ms-flexbox;
