@@ -1441,3 +1441,8 @@ body {
   -webkit-transition: 2.5s;
   transition: 2.5s;
 }
+
+.swiper-kate_nav {
+  display: none;
+  color: #ffffff;
+}

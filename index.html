@@ -424,6 +424,8 @@
               </div>
             </div>
           </div>
+          <div class="swiper-kate_nav swiper-button-prev"></div>
+          <div class="swiper-kate_nav swiper-button-next"></div>
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-6 mt-4 wow fadeInUp">
@@ -787,12 +789,17 @@
     const swiperKate = document.querySelector(".swiper-kate");
     const swiperWrapKate = document.querySelector(".swiper-wrap-kate");
     const swiperSlideKate = document.querySelectorAll(".swiper-slide-kate");
+    const swiperNavLeft = document.querySelectorAll(".swiper-button-prev");
+    const swiperNavRight = document.querySelectorAll(".swiper-button-next");
+
 
     if (document.documentElement.clientWidth < 768) {
       swiperKate.classList.toggle("mySwiper3");
       swiperKate.classList.toggle("swiper");
       swiperWrapKate.classList.toggle("row");
       swiperWrapKate.classList.toggle("swiper-wrapper");
+      swiperNavLeft.style.display = 'block';
+      swiperNavRight.style.display = 'block';
       swiperSlideKate.forEach(item => {
             item.classList.toggle("swiper-slide");
         })
