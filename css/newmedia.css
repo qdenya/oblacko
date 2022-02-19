@@ -1,0 +1,125 @@
+@media (max-width: 920px) {
+  .header_menu {
+    display: none;
+  }
+  .header_social {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .header_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 738px) {
+  .header_fon_title {
+    font-size: 5vw;
+    line-height: inherit;
+  }
+  .header_fon_text {
+    font-size: 4vw;
+    line-height: inherit;
+  }
+  .header_fon_block {
+    display: block;
+    width: auto;
+  }
+  .header_fon_block_item {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    margin-bottom: 5px;
+  }
+  .header_fon_block_text {
+    display: none;
+  }
+  .header_fon_block_title {
+    font-size: 4vw;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 784px) {
+  .tabs_order_wrapper {
+    width: 90%;
+  }
+  .contacts_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 676px) {
+  .tabs_wrapper {
+    -webkit-columns: 1;
+            columns: 1;
+    width: 100%;
+  }
+  .tabs_order_wrapper {
+    width: 100%;
+  }
+  .contacts_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts_form {
+    width: 100%;
+  }
+  .contacts_form_btn {
+    margin: 10px auto;
+  }
+  .contacts_info_title, .contacts_info_link, .contacts_info_text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 636px) {
+  .advantages_wrapper, .advantages_more_wrapper {
+    -webkit-columns: 1;
+            columns: 1;
+    width: 100%;
+  }
+  .advantages_item {
+    margin-bottom: 15px !important;
+  }
+  .advantages_item::before {
+    margin-right: 20px;
+  }
+  .advantages_more_item {
+    margin-bottom: 15px !important;
+  }
+  .tabs_order_item_con {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 10px;
+  }
+  .tabs_order_item_count {
+    width: 80px;
+  }
+  .tabs_order_item_select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px;
+  }
+  .tabs_order_info {
+    height: 100%;
+  }
+  .tabs_order_input {
+    width: calc(100% - 38px);
+    margin: 0 0 10px 0 !important;
+  }
+  .tabs_order_textarea {
+    width: calc(100% - 38px);
+  }
+}

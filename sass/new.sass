@@ -1,0 +1,513 @@
+body
+  font-family: 'Museo Sans', sans-serif
+  background: #1E1815
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+
+.active
+  display: flex !important
+
+.no-scroll
+  overflow: hidden
+
+.title
+  font-weight: normal
+  font-size: 25px
+  line-height: 36px
+  text-align: center
+  color: #FFFFFF
+  margin: 45px 0
+  &_dop
+    font-weight: normal
+    font-size: 23px
+    line-height: 28px
+    text-align: center
+    color: #D3A270
+    margin: 40px 0
+  &_order
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    text-align: center
+    color: #FFFFFF
+    margin: 45px 0 35px 0
+  &_contacts, &_contact
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FFFFFF
+    text-align: left
+  &_contacts
+    margin: 30px 0 30px 0
+  &_contact
+    margin: 0px 0 20px 0
+.header
+  background: rgba(45, 45, 47, 0.8)
+  &_fon
+    height: 557px
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1E1815 95%, #1E1815 100%), url(../img/mix.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    background-position: center
+    &_wrapper
+      display: flex
+      align-items: center
+      flex-direction: column
+    &_title
+      font-weight: 600
+      font-size: 40px
+      line-height: 48px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+    &_text
+      font-weight: normal
+      font-size: 33px
+      line-height: 40px
+      color: #FFFFFF
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+      text-align: center
+      margin-bottom: 10%
+    &_block
+      display: flex
+      justify-content: space-between
+      width: 80%
+      &_item
+        display: flex
+        flex-direction: column
+        align-items: center
+      &_title
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #FFFFFF
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &_menu
+    display: flex
+    &_item
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-decoration: none
+      color: #FFFFFF
+    &_item:not(:last-child)
+      margin-right: 34px
+  &_mobile
+    display: none
+    margin-right: 10px
+    &_link
+      background: url(../img/icons/hamburg.svg) no-repeat top center
+      height: 24px
+      width: 24px
+      background-size: contain
+    &_menu
+      position: fixed
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      display: none
+      left: 0
+      top: 89px
+      right: 0
+      bottom: 0
+      height: calc(100%-60px)
+      background: rgba(30, 24, 21, 0.95)
+      &_item
+        text-decoration: none
+        font-size: 25px
+        color: #fff
+        margin-bottom: 10px
+      &_call
+        margin-top: 80px
+        padding: 10px
+        color: #E0AC76
+        border: 2px solid #E0AC76
+        text-decoration: none
+        border-radius: 4px
+.mslider
+  &_item_1
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img1.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+  &_item_2
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img2.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+  &_item_3
+    background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/img3.jpg)
+    background-size: cover
+    width: 100%
+    height: 450px
+.advantages
+  &_wrapper
+    columns: 2
+    width: 87%
+    margin: auto
+  &_item:not(:nth-of-type(3n+4))
+    margin-bottom: 34px
+  &_item::before
+    content: ''
+    background: rgba(211, 162, 112, 0.7)
+    min-width: 20px
+    height: 20px
+    border-radius: 50%
+    margin-right: 34px
+  &_item
+    display: flex
+    align-items: center
+    break-inside: avoid-column
+    &_title
+      font-weight: normal
+      font-size: 20px
+      line-height: 25px
+      color: #D3A270
+    &_text
+      font-weight: 300
+      font-size: 16px
+      line-height: 114%
+      color: #FFFFFF
+    &_dot
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background: rgba(211, 162, 112, 0.7)
+      margin-right: 34px
+    &_info
+      display: flex
+      flex-direction: column
+  &_more
+    &_wrapper
+      columns: 2
+      width: 60%
+      margin: auto
+    &_item:not(:nth-of-type(4n+3))
+      margin-bottom: 20px
+    &_item
+      display: flex
+      align-items: center
+      break-inside: avoid-column
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 114%
+        color: #FFFFFF
+.btns
+  &_wrapper
+    width: 90%
+    margin: 0 auto
+    display: flex
+    justify-content: space-around
+  &_item:hover
+    border: 3px solid #C6A580
+    box-shadow: 0px 0px 10px #C6A580
+    transition: 0.1s ease-in-out
+  &_item
+    padding: 15%
+    border: 1px solid black
+    position: relative
+    transition: 0.1s ease-in-out
+    border: 3px solid #1E1815
+    cursor: pointer
+    &_title
+      position: absolute
+      text-align: center
+      bottom: 10px
+      left: 0
+      right: 0
+      font-weight: 500
+      font-size: 20px
+      line-height: 30px
+      color: #FFFFFF
+
+    &_1
+      background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/kalyan.png) no-repeat
+      background-size: contain
+    &_2
+      background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/katering.png) no-repeat
+      background-size: contain
+    &_3
+      background: linear-gradient(to bottom, rgba(black,.0001), #1E1815),url(../img/autsorsing.png) no-repeat
+      background-size: contain
+  &_item:nth-child(2)
+    margin: 0 10px
+.tabs
+  &_wrapper
+    columns: 2
+    width: 87%
+    margin: auto
+  &_item
+    display: flex
+    justify-content: space-between
+    break-inside: avoid-column
+    padding-bottom: 13px
+    margin-bottom: 13px
+    border-bottom: 1px solid #C6A580
+    &_info
+      display: flex
+      flex-direction: column
+      width: 75%
+    &_title
+      font-weight: 400
+      font-size: 16px
+      line-height: 19px
+      color: #FFFFFF
+    &_text
+      font-weight: 100
+      font-size: 15px
+      line-height: 18px
+      color: #FFFFFF
+    &_price
+      font-weight: 300
+      font-size: 20px
+      line-height: 24px
+      color: #FFFFFF
+  &_order
+    &_wrapper
+      width: 70%
+      margin: auto
+    &_item
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 13px
+      margin-bottom: 13px
+      border-bottom: 1px solid #C6A580
+      &_title
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+      &_count
+        display: flex
+        align-items: center
+        border: 2px solid #E0AC76
+        border-radius: 4px
+        padding: 4px 5px
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+
+      &_con
+        margin-left: auto
+      &_num
+        margin: 0 9px
+        text-align: center
+      &_total
+        width: 100px
+        text-align: end
+        font-weight: 300
+        font-size: 20px
+        line-height: 24px
+        color: #FFFFFF
+
+      &_select
+        display: flex
+        margin-left: auto
+        &_item:not(:first-child)
+          margin-left: 10px
+        &_item
+          position: relative
+          &_radio
+            display: none
+        &_item label
+          border: 2px solid #AFAFAF
+          border-radius: 4px
+          padding: 6px 16px
+          font-weight: 300
+          font-size: 15px
+          line-height: 18px
+          color: #FFFFFF
+        &_item input[type=radio]:checked + label
+          font-weight: 500
+          border: 2px solid #E0AC76
+          border-radius: 4px
+        &_item input[type=radio]:checked + label::after
+          content: ''
+          display: block
+          position: absolute
+          width: 16px
+          height: 16px
+          background: url(../img/icons/tick.svg) #E0AC76
+          background-repeat: no-repeat
+          background-position: center left 2px
+          top: -16px
+          right: -7px
+          border-radius: 50%
+    &_total
+      display: flex
+      justify-content: flex-end
+      align-items: baseline
+      padding-bottom: 13px
+      margin-bottom: 13px
+      border-bottom: 1px solid #C6A580
+      &_text
+        margin-right: 21px
+        font-weight: 300
+        font-size: 16px
+        color: #FFFFFF
+      &_price
+        font-weight: 500
+        font-size: 22px
+        color: #FFFFFF
+    &_info
+      height: 140px
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: space-between
+    &_input:nth-child(2)
+      margin: 5px 5px 5px 0
+    &_input
+      width: calc((100% / 2) - 40px)
+      border: 2px solid #AFAFAF
+      border-radius: 4px
+      background: transparent
+      padding: 8px 10px 8px 24px
+      outline: none
+      color: #fff
+    &_textarea
+      flex-basis: 100%
+      width: calc((100% / 2) - 41px)
+      resize: none
+      border: 2px solid #AFAFAF
+      border-radius: 4px
+      background: transparent
+      padding: 8px 10px 8px 24px
+      outline: none
+      color: #fff
+    &_btn
+      margin: 10px auto 0 auto
+  &_form
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+.contacts
+  margin: 90px 0 45px 0
+  &_wrapper
+    display: flex
+    width: 80%
+    margin: 0 auto
+    justify-content: space-between
+  &_info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &_title
+      font-weight: 300
+      font-size: 18px
+      line-height: 22px
+      color: #FFFFFF
+    &_text
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: #FFFFFF
+    &_link
+      font-weight: 500
+      font-size: 25px
+      line-height: 30px
+      color: #FFFFFF
+      text-decoration: none
+
+  &_form
+    display: flex
+    flex-direction: column
+    width: 40%
+    &_input
+      border: 2px solid #AFAFAF
+      border-radius: 4px
+      background: transparent
+      padding: 8px 10px 8px 24px
+      outline: none
+      color: #fff
+    &_input:nth-child(3)
+      margin-top: 10px
+      margin-bottom: 10px
+    &_textarea
+      resize: none
+      border: 2px solid #AFAFAF
+      border-radius: 4px
+      background: transparent
+      padding: 8px 10px 8px 24px
+      outline: none
+      color: #fff
+    &_btn
+      margin: 10px auto 0 0
+
+.tabak
+  margin-top: 70px
+  z-index: -1
+  &_title
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    color: #FFFFFF
+    text-align: center
+    margin-top: 92px
+    margin-bottom: 30px
+  &_item
+    width: 300px
+    height: 300px
+    &_img
+      background-size: contain
+      width: 300px
+      height: 300px
+  &_1
+    background-image: url(../img/tobaco/1.png)
+  &_2
+    background-image: url(../img/tobaco/2.png)
+  &_3
+    background-image: url(../img/tobaco/3.png)
+  &_4
+    background-image: url(../img/tobaco/4.png)
+  &_5
+    background-image: url(../img/tobaco/5.png)
+
+.btn
+  background: transparent
+  padding: 13px 30px
+  border: 2px solid #E0AC76
+  border-radius: 4px
+  font-weight: normal
+  font-size: 19px
+  line-height: 23px
+  color: #E0AC76
+
+.footer
+  background: #313131
+  &_wrapper
+    display: flex
+    justify-content: center
+    flex-direction: column
+  &_text, &_link
+    font-weight: 100
+    font-size: 14px
+    line-height: 101%
+    color: #FFFFFF
+    text-align: center
+    padding: 10px 0
+  &_link
+    text-align: center
+    text-decoration: none
+    font-size: 12px
+    color: #BFBFBF
+    padding: 0 0 10px 0

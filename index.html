@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="_width=device-width">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
   
@@ -17,6 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css?v=1.2">
   <link rel="stylesheet" href="css/media.css?v=1.2">
+  <link rel="stylesheet" href="css/sprites.css">
 </head>
 <body>
 
@@ -64,15 +63,15 @@
     </div>
     <div class="mheader_name_contacts">
       <div class="mheader_name_contacts_item">
-        <img src="img/icons/clock.svg" alt="Item-logo" class="mheader_name_contacts_item_img">
+        <div class="mheader_name_contacts_item_img clock"></div>
         <span class="mheader_name_contacts_item_name">9:00-22:00</span>
       </div>
       <div class="mheader_name_contacts_item">
-        <img src="img/icons/location.svg" alt="Item-logo" class="mheader_name_contacts_item_img">
+        <div class="mheader_name_contacts_item_img location"></div>
         <span class="mheader_name_contacts_item_name">г.Минск, ул.Октябрьская</span>
       </div>
       <div class="mheader_name_contacts_item">
-        <img src="img/icons/call.svg" alt="Item-logo" class="mheader_name_contacts_item_img">
+        <div class="mheader_name_contacts_item_img call"></div>
         <a href="tel:+375291202832" class="mheader_name_contacts_item_phone">+375(29)120-28-32</a>
       </div>
     </div>
@@ -93,8 +92,7 @@
           <a href="#contacts" class="header_top_menu_link">Контакты</a>
         </div>
         <div class="header_top_social">
-          <a href="https://www.instagram.com/oblacko_catering/" class="header_top_social_link">
-            <img src="img/inst.svg" alt="Link: INST" class="header_top_social_link_img">
+          <a href="https://www.instagram.com/oblacko_catering/" class="header_top_social_link instagram">
           </a>
         </div>
       </div>
@@ -105,17 +103,17 @@
         </div>
         <div class="header_name_contacts">
           <div class="header_name_contacts_item">
-            <img src="img/icons/clock.svg" alt="Item-logo" class="header_name_contacts_item_img">
+            <div class="clock"></div>
             <span class="header_name_contacts_item_name">9:00-22:00</span>
             <p class="header_name_contacts_item_text">Время работы</p>
           </div>
           <div class="header_name_contacts_item">
-            <img src="img/icons/location.svg" alt="Item-logo" class="header_name_contacts_item_img">
+            <div class="location"></div>
             <span class="header_name_contacts_item_name">г.Минск, ул.Октябрьская</span>
             <p class="header_name_contacts_item_text">Наш адрес</p>
           </div>
           <div class="header_name_contacts_item">
-            <img src="img/icons/call.svg" alt="Item-logo" class="header_name_contacts_item_img">
+            <div class="call"></div>
             <span class="header_name_contacts_item_name">+375(29)120-28-32</span>
             <p class="header_name_contacts_item_text">Заказ по телефону</p>
           </div>
@@ -730,6 +728,7 @@
       <textarea class="footer_right_input" placeholder="Сообщение" name="Сообщение:" required></textarea>
       <input type="submit" class="footer_right_submit" value="Бесплатная консультация">
     </form>
+    <img src="img/Sprites.svg" alt="Spr">
   </footer>
 
   <div class="smoke_right">
